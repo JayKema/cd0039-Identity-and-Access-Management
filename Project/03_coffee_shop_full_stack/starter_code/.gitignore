@@ -2,7 +2,9 @@ venv/
 .vscode/
 __pycache__/
 test.db
-
+backend/env
+../../lesson-1-Foundation
+../../lesson-2-Identity-and-Authentication
 # OS generated files #
 ######################
 .DS_Store

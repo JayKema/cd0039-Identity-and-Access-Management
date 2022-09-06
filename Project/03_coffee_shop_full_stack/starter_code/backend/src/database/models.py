@@ -3,16 +3,16 @@ from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-database_filename = "database.db"
+database_filename = "database.db"   
 project_dir = os.path.dirname(os.path.abspath(__file__))
 database_path = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
 
 db = SQLAlchemy()
 
-'''
-setup_db(app)
-    binds a flask application and a SQLAlchemy service
-'''
+
+
+# binds a flask application and a SQLAlchemy service'
+
 
 
 def setup_db(app):
@@ -47,8 +47,6 @@ def db_drop_and_create_all():
 Drink
 a persistent drink entity, extends the base SQLAlchemy Model
 '''
-
-
 class Drink(db.Model):
     # Autoincrementing, unique primary key
     id = Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
